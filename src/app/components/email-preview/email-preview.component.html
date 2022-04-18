@@ -1,0 +1,20 @@
+<table class="table scroll">
+    <thead>
+        <tr>
+            <th scope="col">Sender</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let item of emailDetail">
+            <tr routerLinkActive="active" [routerLink]="[item._id]">
+                <td class=" from">{{item.from}}</td>
+                <td class="subject">{{item.subject}}</td>
+                <td class="">{{item.date| date:"YYYY/MM/dd"}}</td>
+            </tr>
+        </ng-container>
+
+    </tbody>
+</table>
+<router-outlet></router-outlet>

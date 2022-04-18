@@ -1,0 +1,7 @@
+<ul class="nav nav-pills flex-column ">
+    <ng-container *ngFor="let box of emailBoxes">
+        <li class="nav-item" [routerLink]="[ box]">
+            <a class="nav-link text-center" routerLinkActive="active"> {{box}}</a>
+        </li>
+    </ng-container>
+</ul>

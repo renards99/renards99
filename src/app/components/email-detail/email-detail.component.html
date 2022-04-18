@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="left">
+
+        <div class="">{{myMessage.subject}}</div>
+        <div class="">{{myMessage.from}} --> {{myMessage.to}}</div>
+    </div>
+
+    <div class="right">
+        <div class="date text-center">{{myMessage.date|date:'MMMM d, y, h:mm:ss a'}}</div>
+        <div class="but">
+            <button type="button" class="btn btn-primary mx-1">reply</button>
+            <button type="button" class="btn btn-primary mx-1">forward</button>
+            <button type="button" class="btn btn-primary mx-1">delete  </button>
+        </div>
+    </div>
+</div>
+<div class="detail">
+    {{myMessage.body}}
+</div>

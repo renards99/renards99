@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.from {
+    white-space: nowrap;
+    max-width: 15vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subject {
+    width: 70vw;
+}
+
+.scroll {
+    height: 30vh !important;
+    overflow: auto;
+}
+
+.active {
+    background-color: blue;
+    color: white
+}
+
+table {
+    width: 88vw;
+    display: inline-block;
+    padding: 0;
+}
